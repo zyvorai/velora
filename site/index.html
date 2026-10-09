@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Velora · VMs, models and clusters on your Mac</title>
+  <meta name="description" content="One native Mac app: Debian, Ubuntu or macOS VMs in one click, MLX models and LoRA training on your GPU, Kubernetes, FluxVM and Kairon, with one memory ledger." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="canonical" href="https://zyvorai.github.io/velora/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Velora" />
+  <meta property="og:title" content="Velora · VMs, models and clusters on your Mac" />
+  <meta property="og:description" content="VMs, MLX endpoints, k3s, FluxVM and Kairon in one native Mac app. Local-first." />
+  <meta property="og:url" content="https://zyvorai.github.io/velora/" />
+  <meta property="og:image" content="https://zyvorai.github.io/velora/social/velora-hero-dark.jpg" />
+  <meta property="og:image:width" content="2400" />
+  <meta property="og:image:height" content="1260" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://zyvorai.github.io/velora/social/velora-hero-dark.jpg" />
+  <script src="theme.js"></script>
+  <link rel="stylesheet" href="site.css" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Velora","applicationCategory":"DeveloperApplication","operatingSystem":"macOS 26 or later (Apple silicon)","description":"A native Mac app that boots Debian, Ubuntu or macOS virtual machines in one click on Virtualization.framework.","license":"https://github.com/zyvorai/velora/blob/main/LICENSING.md","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Free for personal, home, learning and non-production use; production business use needs a commercial licence."}}
+  </script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="bar">
+  <a class="brand" href="./" aria-label="Velora home"><img class="logo" src="favicon.svg" alt="" width="32" height="32" /><b>VELORA</b></a>
+  <nav aria-label="Sections" id="sections">
+    <a href="#gallery">See it</a><a href="#instant">Instant</a><a href="#platform">Platform</a><a href="#kubernetes">Kubernetes</a><a href="#gpu">GPU</a><a href="#macs">Macs</a><a href="#how">How it fits</a><a href="#download">Download</a><a href="#quickstart">Build</a>
+  </nav>
+  <div class="bar-actions">
+    <button id="theme" class="icon" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+      <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+    <a class="btn small" href="https://github.com/zyvorai/velora">GitHub</a>
+    <a class="btn small primary" href="#download">Download</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <p class="kicker">Zyvor · a platform for your Mac</p>
+    <h1>VMs, models and <em>clusters.</em></h1>
+    <p class="lede">One <strong>native Mac app</strong>: boot Debian, Ubuntu or macOS in one click, serve MLX models on your GPU, run <strong>Kubernetes</strong>, drive <strong>FluxVM</strong> and make the Mac a <strong>Kairon</strong> node. One memory ledger keeps it all honest.</p>
+    <p class="cta"><a class="btn primary" href="#download">Download for Mac</a><a class="link" href="#gallery">See it running</a></p>
+    <ul class="chips" aria-label="Highlights"><li class="ro">Apple silicon</li><li>VMs</li><li>MLX</li><li>Kubernetes</li><li>FluxVM</li><li>Kairon</li><li>Fleet</li></ul>
+    <img class="hero-img" src="social/velora-hero-dark.jpg" width="2400" height="1260" alt="Velora: VMs, models and clusters on your Mac, with the app showing a running Ubuntu machine and the Endpoints screen" />
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2>Real captures, light and dark</h2>
+    <p class="sub">Every image is the app on an Apple M4 running macOS 27. The guests are real Debian and Ubuntu VMs, the models, training job, k3s cluster and FluxVM VM are real runs.</p>
+    <div class="controls" id="controls">
+      <div class="seg" role="radiogroup" aria-label="Appearance" data-key="mode">
+        <button type="button" role="radio" aria-checked="false" data-value="light">Light</button>
+        <button type="button" role="radio" aria-checked="true" data-value="dark">Dark</button>
+      </div>
+      <div class="seg wide" role="radiogroup" aria-label="Scene" data-key="view">
+        <button type="button" role="radio" aria-checked="true" data-value="debian">Debian</button>
+        <button type="button" role="radio" aria-checked="false" data-value="ubuntu">Ubuntu</button>
+        <button type="button" role="radio" aria-checked="false" data-value="new-machine">New Machine</button>
+        <button type="button" role="radio" aria-checked="false" data-value="downloading">Downloading</button>
+        <button type="button" role="radio" aria-checked="false" data-value="graphics">Graphics</button>
+        <button type="button" role="radio" aria-checked="false" data-value="home">Home</button>
+        <button type="button" role="radio" aria-checked="false" data-value="models">Models</button>
+        <button type="button" role="radio" aria-checked="false" data-value="endpoints">Endpoints</button>
+        <button type="button" role="radio" aria-checked="false" data-value="training">Training</button>
+        <button type="button" role="radio" aria-checked="false" data-value="resources">Resources</button>
+        <button type="button" role="radio" aria-checked="false" data-value="fleet">Fleet</button>
+        <button type="button" role="radio" aria-checked="false" data-value="cluster">Kubernetes</button>
+        <button type="button" role="radio" aria-checked="false" data-value="fluxvm">FluxVM</button>
+        <button type="button" role="radio" aria-checked="false" data-value="kairon">Kairon</button>
+        <button type="button" role="radio" aria-checked="false" data-value="library">Library</button>
+      </div>
+    </div>
+    <figure class="shot"><img id="shot" src="ux/app-dark-debian.png" width="2464" height="1664" alt="Velora: Debian 13 running, dark appearance" />
+      <figcaption id="shot-cap">Debian 13 running · dark</figcaption></figure>
+  </section>
+
+  <section class="band" aria-label="Promises">
+    <div><b>Instant</b><span>No installer. Cloud images with a login ready.</span></div>
+    <div><b>Native</b><span>SwiftUI, system materials and accent, light and dark.</span></div>
+    <div><b>Local-first</b><span>Runs as you. No account, nothing uploaded.</span></div>
+    <div><b>Honest</b><span>It says what is tested and what is not.</span></div>
+  </section>
+
+  <section id="instant">
+    <h2>From pick to a shell in under a minute</h2>
+    <p class="sub">After the image is downloaded, a Debian guest answered on SSH 23 seconds after launch on an M4 (measured, image cached).</p>
+    <img class="card-img" src="ux/readme-instant-vm.jpg" width="3200" height="1500" alt="Pick, download, prepare, boot, connect." loading="lazy" />
+    <div class="grid">
+      <article class="card"><h3>Debian 13 and Ubuntu 26.04 LTS</h3><p>ARM64 cloud images with a cloud-init seed: user <code>velora</code>, your SSH keys installed, sudo without a prompt.</p></article>
+      <article class="card"><h3>macOS</h3><p>Asks Apple for the newest restore image your Mac supports, downloads it (about 17 GB), installs and boots it.</p></article>
+      <article class="card"><h3>Drag and drop</h3><p>Drop an <code>.ipsw</code> or <code>.iso</code> on the window to create and start a machine from your own file.</p></article>
+      <article class="card"><h3>Resumable downloads</h3><p>Images are cached, resumable and checksum-verified, so a retry never starts over.</p></article>
+      <article class="card"><h3>The address, shown</h3><p>The guest reports its own address, so Velora shows <code>ssh velora@…</code> right under the display.</p></article>
+      <article class="card"><h3>No root, no extensions</h3><p>Runs as your user on Virtualization.framework with NAT networking.</p></article>
+    </div>
+  </section>
+
+  <section id="demo-gif">
+    <h2>One run, time-lapsed</h2>
+    <figure class="frame"><img src="ux/velora-demo.gif" width="960" height="600" alt="Velora: new machine, the image is prepared, the guest boots, the ssh address appears" loading="lazy" />
+      <figcaption>New Machine, image prepared, boot, and the address appears. Twelve seconds of a real run.</figcaption></figure>
+  </section>
+
+  <section id="platform">
+    <h2>More than VMs: models, clusters, FluxVM and Kairon</h2>
+    <p class="sub">The same app serves MLX models on your GPU, runs k3s in Velora VMs and links to FluxVM and Kairon, all against one memory ledger.</p>
+    <img class="card-img" src="ux/readme-platform.jpg" width="3200" height="1892" alt="Virtual machines, models, endpoints, training, Kubernetes, containers, fleet and FluxVM in one app sharing one memory pool." loading="lazy" />
+    <div class="grid">
+      <article class="card"><h3>Private OpenAI endpoints</h3><p>Versioned, keyed, rate-limited, streaming, with health restarts and one-press rollback. Nothing leaves your Mac.</p></article>
+      <article class="card"><h3>LoRA fine-tuning</h3><p>Checkpoint, pause, resume and yield to inference, then serve the adapter as a new version.</p></article>
+      <article class="card"><h3>One memory ledger</h3><p>VMs, models, training and FluxVM VMs reserve memory first. Admission and concurrency, not GPU cores.</p></article>
+    </div>
+    <img class="card-img" src="ux/readme-gateway.jpg" width="3200" height="1500" alt="A client calls the gateway with a key, which proxies to an MLX worker on the GPU." loading="lazy" />
+    <img class="card-img" src="ux/readme-memory-scheduler.jpg" width="3200" height="1500" alt="Requests from VMs, models, training and FluxVM are admitted, queued or denied by one ledger." loading="lazy" />
+  </section>
+
+  <section id="runs">
+    <h2>Real runs, time-lapsed</h2>
+    <p class="sub">Each clip is the app doing the work on an Apple M4: nothing is mocked.</p>
+    <div class="grid">
+      <figure class="frame"><img src="ux/velora-endpoints.gif" width="880" height="594" alt="Deploying an MLX model as an endpoint" loading="lazy" /><figcaption>Serve a model (already downloaded, so it is quick).</figcaption></figure>
+      <figure class="frame"><img src="ux/velora-training.gif" width="880" height="594" alt="A LoRA training job from iteration 0 to 400" loading="lazy" /><figcaption>A LoRA job, iteration 0 to 400.</figcaption></figure>
+      <figure class="frame"><img src="ux/velora-cluster.gif" width="880" height="594" alt="A k3s cluster going from creating to Ready" loading="lazy" /><figcaption>A k3s cluster comes up.</figcaption></figure>
+      <figure class="frame"><img src="ux/velora-kairon.gif" width="880" height="594" alt="Kairon starts, this Mac becomes a Ready Node and a Machine boots" loading="lazy" /><figcaption>Kairon: the Mac becomes a Node and boots a Machine.</figcaption></figure>
+      <figure class="frame"><img src="ux/velora-fluxvm.gif" width="880" height="594" alt="The FluxVM daemon starts and boots a VM" loading="lazy" /><figcaption>FluxVM boots a VM on the vz backend.</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="kubernetes">
+    <h2>Kubernetes in one click</h2>
+    <p class="sub">Velora boots Ubuntu 26.04 VMs, installs k3s, fetches the kubeconfig and waits for Ready. Verified for a single node on an M4; multi-node join is not verified.</p>
+    <img class="card-img" src="ux/readme-k3s.jpg" width="3200" height="1500" alt="New Cluster, server VM, node Ready, kubectl." loading="lazy" />
+  </section>
+
+  <section id="fluxvm-kairon">
+    <h2>Your Mac as a Kubernetes node</h2>
+    <p class="sub">FluxVM's new <code>vz</code> backend and Kairon's Mac node run natively. Velora hosts the cluster, supervises FluxVM and counts its VMs.</p>
+    <img class="card-img" src="ux/readme-fluxvm-kairon.jpg" width="3200" height="1662" alt="Kairon schedules a Machine onto the Mac node, FluxVM boots it on Virtualization.framework." loading="lazy" />
+    <img class="card-img" src="ux/readme-fleet.jpg" width="3200" height="1500" alt="Several Macs share models and place jobs by free memory over pinned TLS." loading="lazy" />
+  </section>
+
+  <section id="tutorials">
+    <h2>Mac tutorials</h2>
+    <p class="sub">Step by step, each ending with exactly what was verified and where.</p>
+    <div class="grid">
+      <article class="card"><h3><a href="https://github.com/zyvorai/velora/blob/main/docs/tutorials/01-first-vm.md">1. Your first VM</a></h3><p>Debian or Ubuntu, one click, SSH.</p></article>
+      <article class="card"><h3><a href="https://github.com/zyvorai/velora/blob/main/docs/tutorials/02-private-openai-endpoint.md">2. A private OpenAI endpoint</a></h3><p>MLX, keys, versions, rollback.</p></article>
+      <article class="card"><h3><a href="https://github.com/zyvorai/velora/blob/main/docs/tutorials/03-fine-tune-lora.md">3. Fine-tune with LoRA</a></h3><p>Train, pause, publish an adapter.</p></article>
+      <article class="card"><h3><a href="https://github.com/zyvorai/velora/blob/main/docs/tutorials/04-k3s-cluster.md">4. A k3s cluster</a></h3><p>Nodes and pods from the app.</p></article>
+      <article class="card"><h3><a href="https://github.com/zyvorai/velora/blob/main/docs/tutorials/05-fluxvm-and-kairon-on-a-mac.md">5. FluxVM and Kairon</a></h3><p>Register the Mac as a node.</p></article>
+      <article class="card"><h3><a href="https://github.com/zyvorai/velora/blob/main/docs/tutorials/06-fleet-of-macs.md">6. A fleet of Macs</a></h3><p>Place jobs, share models.</p></article>
+    </div>
+    <p class="sub"><a href="https://github.com/zyvorai/velora/blob/main/docs/how-it-works.md">How it all works</a></p>
+  </section>
+
+  <section id="gpu">
+    <h2>Your GPU, stated honestly</h2>
+    <table>
+      <tr><th>Guest</th><th>Host</th><th>What it gets</th></tr>
+      <tr><td>macOS</td><td>Apple silicon</td><td><span class="tag t-g">Accelerated</span> Metal paravirtual graphics on the host GPU.</td></tr>
+      <tr><td>Linux</td><td>Apple silicon</td><td><span class="tag t-a">2D only</span> Virtio display. Apple offers no 3D acceleration to Linux guests.</td></tr>
+      <tr><td>Any</td><td>Any</td><td><span class="tag t-d">Not available</span> GPU passthrough: impossible on Apple silicon, future work on Linux.</td></tr>
+    </table>
+  </section>
+
+  <section id="macs">
+    <h2>Runs on every Mac, from a Mac mini to a Mac Studio cluster</h2>
+    <p class="sub">Unified memory is GPU memory. A Mac mini becomes a private assistant for the house; a few Mac Studios become an on-premise LLM endpoint that stays OpenAI-compatible and never sends data out.</p>
+    <img class="card-img" src="ux/readme-macs.jpg" width="3200" height="2092" alt="Mac mini for home, Mac Studio for a team, MacBook Pro for development, all running Velora, FluxVM and Kairon." loading="lazy" />
+    <div class="grid">
+      <article class="card"><h3>Home, low cost</h3><p>One Mac mini: a private chat endpoint with API keys, plus a Debian or Ubuntu VM. Silent, always on.</p></article>
+      <article class="card"><h3>Small team</h3><p>One Mac Studio: larger models, LoRA fine-tuning that yields to inference, k3s for the rest.</p></article>
+      <article class="card"><h3>Regulated, on-premise</h3><p>Two to four Mac Studios on a Thunderbolt 5 mesh for finance, legal, healthcare and air-gapped sites.</p></article>
+    </div>
+    <img class="card-img" src="ux/readme-home-cluster.jpg" width="3200" height="2792" alt="Clients call the Velora gateway, which serves models from a cluster of Mac Studios joined by Thunderbolt 5." loading="lazy" />
+    <img class="card-img" src="ux/readme-model-fit.jpg" width="3200" height="1964" alt="Which model fits which Mac, from 16 GB to about 1 TB pooled." loading="lazy" />
+    <img class="card-img" src="ux/readme-cost.jpg" width="3200" height="2286" alt="A Mac Studio cluster compared with a GPU server on memory, cost, power and operations." loading="lazy" />
+    <p class="sub">Verified on one Apple M4 with macOS 27.2. Multi-Mac clusters and cross-node model sharding are on the roadmap; cost and power figures are from GK Servis's <a href="https://www.gkservis.com/case-studies/llm-inference-cluster.html">Mac Studio inference cluster case study</a>. See <a href="https://www.apple.com/in/mac-studio/">Mac Studio</a>, <a href="https://www.apple.com/in/mac-mini/">Mac mini</a> and <a href="https://www.apple.com/in/macbook-pro/">MacBook Pro</a> on apple.com.</p>
+  </section>
+
+  <section id="how">
+    <h2>A native app, Apple's hypervisor, your VM</h2>
+    <p class="sub">The SwiftUI app runs the guest itself on Virtualization.framework, in-process, with no helper service.</p>
+    <img class="card-img" src="ux/readme-how-it-works.jpg" width="3200" height="1500" alt="Velora.app drives Virtualization.framework, which boots Debian, Ubuntu or macOS." loading="lazy" />
+    <img class="card-img" src="ux/readme-gpu.jpg" width="3200" height="1500" alt="What each kind of guest gets from the GPU." loading="lazy" />
+  </section>
+
+  <section id="download">
+    <h2>Download</h2>
+    <p class="sub">Velora 0.3.0 for Apple silicon, macOS 26 or newer. Open the DMG and drag Velora to Applications.</p>
+    <p><a class="btn" href="https://github.com/zyvorai/velora/releases/latest">Download the DMG</a></p>
+    <p class="sub">Not notarized yet, so the first launch needs one override: right-click Velora, choose Open, then Open. Or run:</p>
+    <div class="code"><button class="copy" type="button" aria-label="Copy the command">Copy</button>
+<pre><code>xattr -dr com.apple.quarantine /Applications/Velora.app</code></pre></div>
+    <p class="sub">Full guide: <a href="https://github.com/zyvorai/velora/blob/main/docs/INSTALL.md">INSTALL.md</a>.</p>
+  </section>
+
+  <section id="quickstart">
+    <h2>Install</h2>
+    <p class="sub">An Apple silicon Mac on macOS 26 or newer. Download the DMG, drag Velora to Applications, then right-click and choose Open (the app is ad-hoc signed, not notarized).</p>
+    <p><a class="btn" href="https://github.com/zyvorai/velora/releases/latest">Download the DMG</a></p>
+    <p class="sub">Press <strong>⌘N</strong>, choose Debian, Ubuntu or macOS, then <strong>Create &amp; Start</strong>. Then connect:</p>
+    <div class="code"><button class="copy" type="button" aria-label="Copy the ssh command">Copy</button>
+<pre><code>ssh velora@192.168.64.x        # the address is shown under the display; password: velora</code></pre></div>
+    <p class="sub">Change the default password or rely on your SSH key before exposing a guest beyond your own Mac. See the <a href="https://github.com/zyvorai/velora/blob/main/docs/INSTALL.md">install guide</a>.</p>
+  </section>
+</main>
+
+<footer>
+  <p><b>Velora</b> by Zyvor AI Labs · App: Business Source License 1.1 · <a href="https://github.com/zyvorai/velora">GitHub</a> · <a href="https://github.com/zyvorai/velora/blob/main/docs/RELEASE.md">What is verified</a> · <a href="https://github.com/zyvorai/velora/blob/main/SECURITY.md">Security</a> · <a href="https://github.com/zyvorai/velora/blob/main/LICENSING.md">Licensing</a> · <a href="https://github.com/zyvorai/velora/blob/main/MACOS-LICENSING.md">macOS licensing</a></p>
+  <p>Neighbors: <a href="https://zyvorai.github.io/zyvor-vytrix/">Vytrix</a> · <a href="https://github.com/zyvorai/zyvor-netra">Netra</a></p>
+</footer>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+<script src="site.js"></script>
+</body>
+</html>

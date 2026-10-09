@@ -1,0 +1,7 @@
+{
+  "name": "velora-site",
+  "private": true,
+  "description": "Development-only dependencies for the landing-page check (scripts/site-check.mjs)",
+  "scripts": {"check:site": "bash scripts/build-site.sh && node scripts/site-check.mjs"},
+  "devDependencies": {"playwright": "1.58.2"}
+}
