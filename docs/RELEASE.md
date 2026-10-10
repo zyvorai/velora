@@ -11,6 +11,24 @@ This page says what has been run, and what has not. It is updated with each rele
 
 The local AI platform (MLX models and endpoints, training, files search, fleet, FluxVM link) and the app's own self-tests were run on the same Mac; multi-Mac fleets, Thunderbolt clusters and a second physical Mac were not tested.
 
+## Next release (0.4)
+
+Run on the same Apple M4 (macOS 27.2) with the app's self-tests, before the build is published:
+
+- **Machines** (real Debian 13 guest): shared folder read and write, a `127.0.0.1` port forward reaching the guest's sshd,
+  commands with separate output and exit code, file copy both ways, the vsock agent (commands as `velora`, a 2 MB file, a
+  timeout, still answering with the guest's network down, SSH fallback and **Install Agent**), the live console, suspend and
+  resume without a reboot, snapshot and restore, one operation per machine at a time, and a clone that boots with its own
+  hostname. One run's resume came back without SSH while other VMs were starting on the same network; later runs resumed cleanly.
+- **Models:** benchmark of a small model (time to first token 37 ms median, 144 ms p95; 167 tokens/s), the result kept across
+  restarts; a model too big for the Mac refused before download.
+- **FluxVM:** create with forwards and shared folders, commands, file copy, console stream, snapshot and restore, clone.
+- **Fleet** (loopback): each node reports the app version, thermal state, memory pressure, Thunderbolt links and RDMA status.
+- **One model across Macs:** only the wiring, against a stand-in for EXO on one Mac.
+
+Not yet: a macOS guest install with `--selftest macos` (the restore image is about 25 GB), two physical Macs, Thunderbolt and RDMA,
+real EXO sharding, and a notarized build (the release workflow notarizes once Developer ID secrets are added).
+
 ## Not verified
 
 - That the Shortcuts app lists Velora's actions, Siri phrase recognition, and running an action while the app is closed (the build
