@@ -29,6 +29,21 @@ Read the [install guide](docs/INSTALL.md), then the [tutorials](docs/tutorials/R
 [a k3s cluster](docs/tutorials/04-k3s-cluster.md), [FluxVM and Kairon](docs/tutorials/05-fluxvm-and-kairon-on-a-mac.md) and
 [a fleet of Macs](docs/tutorials/06-fleet-of-macs.md). [How it works](docs/how-it-works.md) explains the pieces.
 
+## Coming in 0.4
+
+Verified on an Apple M4 and on its way to the next build (not in the current download yet). What ran is listed in
+[docs/RELEASE.md](docs/RELEASE.md#next-release-04).
+
+- **Machines:** snapshots and restore, clones with a fresh identity, suspend to disk and resume, shared folders, port forwards on
+  `127.0.0.1`, and for Linux guests a live serial console plus commands and file copy through a small vsock agent that works even
+  with the guest's network down. **Install Agent** adds it to guests made by older builds.
+- **Models:** a benchmark per endpoint (time to first token, tokens per second), and a fit check that refuses downloads too big
+  for your Mac.
+- **FluxVM:** image names, port forwards, shared folders, console, commands, file copy, snapshots and clones from the app.
+- **Fleet:** a card per Mac with memory, heat, memory pressure, tokens per second and Thunderbolt links.
+- **One model across Macs (experimental):** EXO-backed endpoints behind the same gateway and keys. Not yet run on two Macs.
+- **Signed and notarized builds** once a Developer ID is configured for releases.
+
 ## Licensing
 
 - **The app** is under the Business Source License 1.1 ([LICENSE-APP.txt](LICENSE-APP.txt)): free for personal and home use, learning,
