@@ -9,12 +9,25 @@
 
 ## Install
 
-1. Download `Velora-<version>.dmg` from the [latest release](https://github.com/zyvorai/velora/releases/latest).
-2. Optional: verify it. The release also has a `.sha256` file:
+Velora 0.4.0 is a pre-release, so GitHub's "latest release" page does not point at it yet. Use these direct links:
+
+| File | What it does |
+| --- | --- |
+| [Velora-0.4.0.pkg](https://github.com/zyvorai/velora/releases/download/v0.4.0/Velora-0.4.0.pkg) ([.sha256](https://github.com/zyvorai/velora/releases/download/v0.4.0/Velora-0.4.0.pkg.sha256)) | A standard macOS installer: puts Velora.app in Applications |
+| [Velora-0.4.0.dmg](https://github.com/zyvorai/velora/releases/download/v0.4.0/Velora-0.4.0.dmg) ([.sha256](https://github.com/zyvorai/velora/releases/download/v0.4.0/Velora-0.4.0.dmg.sha256)) | A disk image: drag Velora to Applications |
+
+Every version is on the [Releases](https://github.com/zyvorai/velora/releases) page.
+
+1. Download the `.pkg` or the `.dmg`, and its `.sha256`.
+2. Optional: verify it.
    ```bash
-   cd ~/Downloads && shasum -a 256 -c Velora-<version>.dmg.sha256
+   cd ~/Downloads && shasum -a 256 -c Velora-0.4.0.pkg.sha256    # or Velora-0.4.0.dmg.sha256
    ```
-3. Open the DMG and drag **Velora** to **Applications**.
+3. Install it, one of two ways:
+   - **.pkg:** open it and follow the installer (Introduction, Licence, Destination, Install). If macOS refuses to open the
+     package because it is not notarized, right-click it and choose **Open**. Or from Terminal:
+     `sudo installer -pkg ~/Downloads/Velora-0.4.0.pkg -target /`
+   - **.dmg:** open it and drag **Velora** to **Applications**.
 4. **First launch.** Velora is ad-hoc signed, not notarized, so Gatekeeper blocks it once. Either
    right-click Velora → **Open** → **Open**, or run:
    ```bash

@@ -16,7 +16,7 @@
 
   // ---- gallery: appearance x scene, all real captures of the app
   var state = { mode: root.getAttribute("data-theme") === "light" ? "light" : "dark", view: "debian" };
-  var LABEL = { light: "light", dark: "dark", debian: "Debian 13 running", ubuntu: "Ubuntu 26.04 LTS running", "new-machine": "New Machine", downloading: "Downloading an image", graphics: "Graphics", library: "Library", models: "Models", endpoints: "Endpoints", training: "Training a LoRA adapter", resources: "Resources and a running VM", fleet: "Fleet", cluster: "Kubernetes", fluxvm: "FluxVM", kairon: "Kairon", home: "Platform home" };
+  var LABEL = { light: "light", dark: "dark", debian: "Debian 13 running", ubuntu: "Ubuntu 26.04 LTS running", console: "Console & Command", usage: "Usage", "new-machine": "New Machine", downloading: "Downloading an image", graphics: "Graphics", library: "Library", models: "Models", endpoints: "Endpoints", training: "Training a LoRA adapter", resources: "Resources and a running VM", fleet: "Fleet", cluster: "Kubernetes", fluxvm: "FluxVM", kairon: "Kairon", home: "Platform home" };
   var img = document.getElementById("shot"), cap = document.getElementById("shot-cap");
   var groups = [].slice.call(document.querySelectorAll(".seg"));
 
