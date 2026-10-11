@@ -56,7 +56,7 @@ check((await page.locator("#shot-cap").innerText()) === "Ubuntu 26.04 LTS runnin
 check(await page.locator("#shot").evaluate((i) => i.complete && i.naturalWidth > 0), "gallery: the swapped image loads");
 await page.focus('[aria-label="Scene"] [aria-checked="true"]');
 await page.keyboard.press("ArrowRight");
-await page.waitForFunction(() => document.getElementById("shot").src.includes("app-light-new-machine"));
+await page.waitForFunction(() => document.getElementById("shot").src.includes("app-light-console"));
 check(true, "gallery: ArrowRight moves to the next scene");
 await page.keyboard.press("End");
 await page.waitForFunction(() => document.getElementById("shot").src.includes("app-light-library"));
@@ -69,7 +69,7 @@ await page.reload();
 check(await page.getAttribute("html", "data-theme") === "dark", "landing: theme persists across reload");
 await shot(page, "site-landing-dark");
 const combos = [];
-for (const m of ["light", "dark"]) for (const v of ["debian", "ubuntu", "new-machine", "downloading", "graphics", "library"]) combos.push(`ux/app-${m}-${v}.png`);
+for (const m of ["light", "dark"]) for (const v of ["debian", "ubuntu", "console", "new-machine", "downloading", "graphics", "home", "endpoints", "models", "usage", "fleet", "fluxvm", "kairon", "library"]) combos.push(`ux/app-${m}-${v}.png`);
 const missing = [];
 for (const c of combos) { const r = await page.request.get(base + c); if (!r.ok()) missing.push(c); }
 check(missing.length === 0, `gallery: all ${combos.length} screenshots are served${missing.length ? " (missing: " + missing.join(", ") + ")" : ""}`);

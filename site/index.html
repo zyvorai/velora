@@ -23,7 +23,7 @@
   <script src="theme.js"></script>
   <link rel="stylesheet" href="site.css" />
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Velora","applicationCategory":"DeveloperApplication","operatingSystem":"macOS 26 or later (Apple silicon)","description":"A native Mac app that boots Debian, Ubuntu or macOS virtual machines in one click on Virtualization.framework.","license":"https://github.com/zyvorai/velora/blob/main/LICENSING.md","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Free for personal, home, learning and non-production use; production business use needs a commercial licence."}}
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Velora","applicationCategory":"DeveloperApplication","operatingSystem":"macOS 26 or later (Apple silicon)","description":"A native Mac app that boots Debian, Ubuntu or macOS virtual machines in one click on Virtualization.framework.","license":"https://github.com/zyvorai/velora/blob/main/LICENSING.md","softwareVersion":"0.4.0","downloadUrl":"https://github.com/zyvorai/velora/releases/download/v0.4.0/Velora-0.4.0.pkg","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Free for personal, home, learning and non-production use; production business use needs a commercial licence."}}
   </script>
 </head>
 <body>
@@ -32,7 +32,7 @@
 <header class="bar">
   <a class="brand" href="./" aria-label="Velora home"><img class="logo" src="favicon.svg" alt="" width="32" height="32" /><b>VELORA</b></a>
   <nav aria-label="Sections" id="sections">
-    <a href="#gallery">See it</a><a href="#instant">Instant</a><a href="#platform">Platform</a><a href="#kubernetes">Kubernetes</a><a href="#gpu">GPU</a><a href="#macs">Macs</a><a href="#how">How it fits</a><a href="#download">Download</a><a href="#quickstart">Build</a>
+    <a href="#new">New in 0.4</a><a href="#gallery">See it</a><a href="#instant">Instant</a><a href="#platform">Platform</a><a href="#kubernetes">Kubernetes</a><a href="#gpu">GPU</a><a href="#macs">Macs</a><a href="#how">How it fits</a><a href="#download">Download</a><a href="#quickstart">Build</a>
   </nav>
   <div class="bar-actions">
     <button id="theme" class="icon" type="button" aria-label="Switch to dark mode" aria-pressed="false">
@@ -47,11 +47,31 @@
 <main id="main">
   <section class="hero">
     <p class="kicker">Zyvor · a platform for your Mac</p>
+    <p class="pill"><a href="#new"><b>New in 0.4</b> Console &amp; Command, FluxVM clones, Kairon, fleet cards, a .pkg installer →</a></p>
     <h1>VMs, models and <em>clusters.</em></h1>
     <p class="lede">One <strong>native Mac app</strong>: boot Debian, Ubuntu or macOS in one click, serve MLX models on your GPU, run <strong>Kubernetes</strong>, drive <strong>FluxVM</strong> and make the Mac a <strong>Kairon</strong> node. One memory ledger keeps it all honest.</p>
-    <p class="cta"><a class="btn primary" href="#download">Download for Mac</a><a class="link" href="#gallery">See it running</a></p>
-    <ul class="chips" aria-label="Highlights"><li class="ro">Apple silicon</li><li>VMs</li><li>MLX</li><li>Kubernetes</li><li>FluxVM</li><li>Kairon</li><li>Fleet</li></ul>
-    <img class="hero-img" src="social/velora-hero-dark.jpg" width="2400" height="1260" alt="Velora: VMs, models and clusters on your Mac, with the app showing a running Ubuntu machine and the Endpoints screen" />
+    <p class="cta"><a class="btn primary" href="https://github.com/zyvorai/velora/releases/download/v0.4.0/Velora-0.4.0.pkg">Download 0.4.0 (.pkg)</a><a class="btn" href="https://github.com/zyvorai/velora/releases/download/v0.4.0/Velora-0.4.0.dmg">.dmg</a><a class="link" href="#gallery">See it running</a></p>
+    <p class="fine">Pre-release · Apple silicon, macOS 26 or newer · 3 MB</p>
+    <ul class="chips" aria-label="Highlights"><li class="ro">Apple silicon</li><li class="nw">Console &amp; Command</li><li>VMs</li><li>MLX</li><li>Kubernetes</li><li>FluxVM</li><li>Kairon</li><li>Fleet</li></ul>
+    <img class="hero-img" src="social/velora-hero-dark.jpg" width="2400" height="1260" alt="Velora 0.4: VMs, models and clusters on your Mac, with a running Debian 13 machine, the Fleet screen and Console &amp; Command" />
+  </section>
+
+  <section id="new">
+    <h2>New in 0.4</h2>
+    <p class="sub">A way into every guest, deeper FluxVM wiring, Kubernetes Nodes on your Mac, a live card for each Mac in the fleet and a standard installer.</p>
+    <img class="card-img" src="ux/readme-whats-new-04.jpg" width="3200" height="2100" alt="What's new in 0.4: Console &amp; Command, FluxVM clones and snapshots, Kairon, fleet cards, EXO across Macs (experimental), .pkg and DMG." loading="lazy" />
+    <div class="grid two">
+      <figure class="frame"><img src="ux/app-dark-console.png" width="1520" height="1040" alt="Console &amp; Command running uname, os-release, uptime and df in a Debian 13 guest over vsock" loading="lazy" /><figcaption>Console &amp; Command: real output from a Debian 13 guest, via vsock.</figcaption></figure>
+      <figure class="frame"><img src="ux/app-dark-fleet.png" width="2464" height="1664" alt="Fleet: a card for this Mac with memory, heat, disk, Thunderbolt and RDMA" loading="lazy" /><figcaption>Fleet: a card per Mac, refreshed every 5 seconds.</figcaption></figure>
+      <figure class="frame"><img src="ux/app-dark-fluxvm.png" width="2464" height="1664" alt="FluxVM: VMs, images, snapshots and clones" loading="lazy" /><figcaption>FluxVM: named images, snapshots and clones.</figcaption></figure>
+      <figure class="frame"><img src="ux/app-dark-kairon.png" width="2464" height="1664" alt="Kairon: this Mac as a Kubernetes Node" loading="lazy" /><figcaption>Kairon: this Mac as a Kubernetes Node.</figcaption></figure>
+    </div>
+    <img class="card-img" src="ux/readme-console-agent.jpg" width="3200" height="1988" alt="Run commands in the guest with no network: Velora.app talks to velora-agent over virtio-vsock port 1024, with SSH as the fallback." loading="lazy" />
+    <div class="split">
+      <img src="ux/pkg-installer.png" width="1464" height="1120" alt="The Velora 0.4.0 installer package, Introduction step" loading="lazy" />
+      <div><h3>A real installer</h3><p class="sub">Releases now ship <code>Velora-0.4.0.pkg</code> next to the DMG: open it, click through, and Velora is in Applications. Both are built by CI on every tag, with a <code>.sha256</code> beside each.</p>
+      <p><a class="btn primary" href="https://github.com/zyvorai/velora/releases/download/v0.4.0/Velora-0.4.0.pkg">Download the .pkg</a></p></div>
+    </div>
   </section>
 
   <section id="gallery" class="gallery">
@@ -65,12 +85,14 @@
       <div class="seg wide" role="radiogroup" aria-label="Scene" data-key="view">
         <button type="button" role="radio" aria-checked="true" data-value="debian">Debian</button>
         <button type="button" role="radio" aria-checked="false" data-value="ubuntu">Ubuntu</button>
+        <button type="button" role="radio" aria-checked="false" data-value="console">Console</button>
         <button type="button" role="radio" aria-checked="false" data-value="new-machine">New Machine</button>
         <button type="button" role="radio" aria-checked="false" data-value="downloading">Downloading</button>
         <button type="button" role="radio" aria-checked="false" data-value="graphics">Graphics</button>
         <button type="button" role="radio" aria-checked="false" data-value="home">Home</button>
         <button type="button" role="radio" aria-checked="false" data-value="models">Models</button>
         <button type="button" role="radio" aria-checked="false" data-value="endpoints">Endpoints</button>
+        <button type="button" role="radio" aria-checked="false" data-value="usage">Usage</button>
         <button type="button" role="radio" aria-checked="false" data-value="training">Training</button>
         <button type="button" role="radio" aria-checked="false" data-value="resources">Resources</button>
         <button type="button" role="radio" aria-checked="false" data-value="fleet">Fleet</button>
@@ -197,9 +219,14 @@
 
   <section id="download">
     <h2>Download</h2>
-    <p class="sub">Velora 0.3.0 for Apple silicon, macOS 26 or newer. Open the DMG and drag Velora to Applications.</p>
-    <p><a class="btn" href="https://github.com/zyvorai/velora/releases/latest">Download the DMG</a></p>
-    <p class="sub">Not notarized yet, so the first launch needs one override: right-click Velora, choose Open, then Open. Or run:</p>
+    <p class="sub">Velora 0.4.0 (pre-release) for Apple silicon, macOS 26 or newer. Pick the installer or the disk image.</p>
+    <p class="cta left"><a class="btn primary" href="https://github.com/zyvorai/velora/releases/download/v0.4.0/Velora-0.4.0.pkg">Velora-0.4.0.pkg</a><a class="btn" href="https://github.com/zyvorai/velora/releases/download/v0.4.0/Velora-0.4.0.dmg">Velora-0.4.0.dmg</a><a class="link" href="https://github.com/zyvorai/velora/releases">All releases</a></p>
+    <table>
+      <tr><th>File</th><th>Size</th><th>SHA-256</th></tr>
+      <tr><td><a href="https://github.com/zyvorai/velora/releases/download/v0.4.0/Velora-0.4.0.pkg">Velora-0.4.0.pkg</a></td><td>2.9 MB</td><td><code class="hash">773bb434ec8bcfa1ccd1a104fa0fd5c5dd748195748ea6d52e874951051a05d7</code></td></tr>
+      <tr><td><a href="https://github.com/zyvorai/velora/releases/download/v0.4.0/Velora-0.4.0.dmg">Velora-0.4.0.dmg</a></td><td>3.5 MB</td><td><code class="hash">7a558bcf1dfe89e63475dbe3e89b28d11c74083b0c4eb03b662f667076e4572f</code></td></tr>
+    </table>
+    <p class="sub">Not notarized yet, so the first launch needs one override: right-click Velora (or the .pkg), choose Open, then Open. Or run:</p>
     <div class="code"><button class="copy" type="button" aria-label="Copy the command">Copy</button>
 <pre><code>xattr -dr com.apple.quarantine /Applications/Velora.app</code></pre></div>
     <p class="sub">Full guide: <a href="https://github.com/zyvorai/velora/blob/main/docs/INSTALL.md">INSTALL.md</a>.</p>
@@ -207,8 +234,8 @@
 
   <section id="quickstart">
     <h2>Install</h2>
-    <p class="sub">An Apple silicon Mac on macOS 26 or newer. Download the DMG, drag Velora to Applications, then right-click and choose Open (the app is ad-hoc signed, not notarized).</p>
-    <p><a class="btn" href="https://github.com/zyvorai/velora/releases/latest">Download the DMG</a></p>
+    <p class="sub">An Apple silicon Mac on macOS 26 or newer. Open the .pkg (or drag Velora from the DMG to Applications), then right-click Velora and choose Open the first time (the app is ad-hoc signed, not notarized).</p>
+    <p class="cta left"><a class="btn" href="https://github.com/zyvorai/velora/releases/download/v0.4.0/Velora-0.4.0.pkg">Download the .pkg</a><a class="btn" href="https://github.com/zyvorai/velora/releases/download/v0.4.0/Velora-0.4.0.dmg">Download the DMG</a></p>
     <p class="sub">Press <strong>⌘N</strong>, choose Debian, Ubuntu or macOS, then <strong>Create &amp; Start</strong>. Then connect:</p>
     <div class="code"><button class="copy" type="button" aria-label="Copy the ssh command">Copy</button>
 <pre><code>ssh velora@192.168.64.x        # the address is shown under the display; password: velora</code></pre></div>
