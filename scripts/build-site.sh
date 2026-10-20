@@ -3,11 +3,12 @@
 # There is no live demo: the studio needs its backend, so the page shows real screenshots and the demo GIF.
 #   ./scripts/build-site.sh && node scripts/site-check.mjs
 set -euo pipefail
+shopt -s nullglob
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 OUT="${1:-$ROOT/_site}"
 rm -rf "$OUT" && mkdir -p "$OUT/social" "$OUT/ux"
 cp -R "$ROOT"/site/. "$OUT/"
-cp "$ROOT"/docs/social/*.jpg "$OUT/social/"
-cp "$ROOT"/docs/ux/*.png "$ROOT"/docs/ux/*.jpg "$ROOT"/docs/ux/*.gif "$OUT/ux/"
+for f in "$ROOT"/docs/social/*.jpg; do cp "$f" "$OUT/social/"; done
+for f in "$ROOT"/docs/ux/*.png "$ROOT"/docs/ux/*.jpg "$ROOT"/docs/ux/*.gif; do cp "$f" "$OUT/ux/"; done
 touch "$OUT/.nojekyll"
 echo "built ${OUT#$ROOT/} ($(du -sh "$OUT" | cut -f1))"
