@@ -52,7 +52,7 @@ Change the default password before exposing a guest beyond your own Mac.
 /Applications/Velora.app/Contents/MacOS/Velora --selftest debian13     # boots a throwaway VM, passes when SSH answers
 ```
 
-Other suites: `runtime`, `gateway`, `train`, `fleet`, `k3s`, `containers`, `fluxvm`. They use throwaway data and clean up after themselves.
+Other suites: `ubuntu`, `runtime`, `gateway`, `train`, `fleet`, `k3s`, `containers`, `fluxvm`, `kairon`, `macos` (macOS guest install is unverified; see [RELEASE.md](RELEASE.md)). They use throwaway data and clean up after themselves.
 Keep memory free when running `k3s`: under heavy swap the guest can hang.
 
 ## What to know
