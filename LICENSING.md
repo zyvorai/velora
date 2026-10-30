@@ -28,8 +28,7 @@ version becomes available under Apache-2.0 four years after it is first publishe
 - **Do I get a licence to macOS?** No. macOS is licensed by Apple, separately: see [MACOS-LICENSING.md](MACOS-LICENSING.md).
 - **What happens after four years?** The version you have then becomes available under Apache-2.0, as the licence says.
 - **How do I get a commercial licence?** **Velora Pro** covers production use on one Mac. Buy one licence per Mac on the
-  [Razorpay checkout page](https://rzp.io/rzp/cjooj55V) (₹840 plus 18% GST = ₹991.20 in India, about US$9.99 plus GST
-  elsewhere; a GST invoice is emailed, and the invoice is your proof of licence), or ask via [zyvor.dev](https://zyvor.dev) or
+  [Cashfree checkout page](https://payments.cashfree.com/forms/zyvor-velora) (₹7,299 per year including GST, about US$86; a GST invoice is emailed, and the invoice is your proof of licence), or ask via [zyvor.dev](https://zyvor.dev) or
   [sales@zyvor.dev](mailto:sales@zyvor.dev). There is no licence key or in-app unlock yet, and no Mac App Store listing; the
   notarized macOS build is downloaded from this repository's releases.
 - **GST (India)?** Commercial fees are exclusive of GST; GST is added on the invoice at the applicable rate. Free BSL use has

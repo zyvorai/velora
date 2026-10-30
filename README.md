@@ -139,7 +139,7 @@ More in [How it works](docs/how-it-works.md): the gateway, the memory scheduler,
 - **The app** is under the Business Source License 1.1 ([LICENSE-APP.txt](LICENSE-APP.txt)): free for personal and home use, learning,
   research, labs, development and testing (including inside a company); production business use needs a commercial licence. Plain
   words: [LICENSING.md](LICENSING.md).
-- **Commercial licence:** [buy one here](https://rzp.io/rzp/cjooj55V) (one Mac, production use).
+- **Commercial licence:** [buy one here](https://payments.cashfree.com/forms/zyvor-velora) (one Mac, production use, ₹7,299 per year incl. GST). Need something customised? Write to sales@zyvor.dev.
 - **macOS guests** are licensed by Apple, not by Velora: [MACOS-LICENSING.md](MACOS-LICENSING.md). Velora limits you to two active
   macOS guests by default and asks you to confirm Apple's terms the first time.
 - **This website and documentation** are Copyright 2026 Zyvor AI Labs, all rights reserved ([LICENSE](LICENSE)).
