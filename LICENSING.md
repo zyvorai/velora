@@ -31,6 +31,6 @@ version becomes available under Apache-2.0 four years after it is first publishe
   [Cashfree checkout page](https://payments.cashfree.com/forms/zyvor-velora) (₹7,299 per year including GST, about US$86; a GST invoice is emailed, and the invoice is your proof of licence), or ask via [zyvor.dev](https://zyvor.dev) or
   [sales@zyvor.dev](mailto:sales@zyvor.dev). There is no licence key or in-app unlock yet, and no Mac App Store listing; the
   notarized macOS build is downloaded from this repository's releases.
-- **GST (India)?** Commercial fees are exclusive of GST; GST is added on the invoice at the applicable rate. Free BSL use has
-  no charge and no GST.
+- **GST (India)?** The Cashfree Pro checkout is **₹7,299 including GST** for one Mac for one year. Free BSL use has no charge
+  and no GST. Fleet and Enterprise quotes may be exclusive of GST; GST is then added on the invoice.
 - **The website and documentation** in this repository are Copyright Zyvor AI Labs, all rights reserved.
