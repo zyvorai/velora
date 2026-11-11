@@ -9,12 +9,20 @@
 
 ## Install
 
-Velora 0.4.0 is a pre-release, so GitHub's "latest release" page does not point at it yet. Use these direct links:
+### Homebrew (recommended)
+
+```bash
+brew install --cask zyvorai/tap/velora
+```
+
+Production business use needs **Velora Pro** (₹7,299 / Mac / year): [Cashfree](https://payments.cashfree.com/forms/zyvor-velora) (India + international cards).
+
+### Direct download
 
 | File | What it does |
 | --- | --- |
-| [Velora-0.4.0.pkg](https://github.com/zyvorai/velora/releases/download/v0.4.0/Velora-0.4.0.pkg) ([.sha256](https://github.com/zyvorai/velora/releases/download/v0.4.0/Velora-0.4.0.pkg.sha256)) | A standard macOS installer: puts Velora.app in Applications |
-| [Velora-0.4.0.dmg](https://github.com/zyvorai/velora/releases/download/v0.4.0/Velora-0.4.0.dmg) ([.sha256](https://github.com/zyvorai/velora/releases/download/v0.4.0/Velora-0.4.0.dmg.sha256)) | A disk image: drag Velora to Applications |
+| [Velora-0.4.3.dmg](https://github.com/zyvorai/velora/releases/download/v0.4.3/Velora-0.4.3.dmg) ([.sha256](https://github.com/zyvorai/velora/releases/download/v0.4.3/Velora-0.4.3.dmg.sha256)) | Disk image: drag Velora to Applications |
+| [Velora-0.4.3.pkg](https://github.com/zyvorai/velora/releases/download/v0.4.3/Velora-0.4.3.pkg) ([.sha256](https://github.com/zyvorai/velora/releases/download/v0.4.3/Velora-0.4.3.pkg.sha256)) | Installer: puts Velora.app in Applications |
 
 Every version is on the [Releases](https://github.com/zyvorai/velora/releases) page.
 

@@ -51,8 +51,8 @@
     <p class="pill"><a href="#new"><b>New in 0.4</b> Console &amp; Command, FluxVM clones, Kairon, fleet cards, a .pkg installer →</a></p>
     <h1>VMs, models and <em>clusters.</em></h1>
     <p class="lede">One <strong>native Mac app</strong>: boot Debian, Ubuntu or macOS in one click, serve MLX models on your GPU, run <strong>Kubernetes</strong>, drive <strong>FluxVM</strong> and make the Mac a <strong>Kairon</strong> node. One memory ledger keeps it all honest.</p>
-    <p class="cta"><a class="btn primary" href="https://github.com/zyvorai/velora/releases/download/v0.4.0/Velora-0.4.0.pkg">Download 0.4.0 (.pkg)</a><a class="btn" href="https://github.com/zyvorai/velora/releases/download/v0.4.0/Velora-0.4.0.dmg">.dmg</a><a class="btn" href="https://payments.cashfree.com/forms/zyvor-velora">Buy Pro · ₹7,299/yr</a><a class="link" href="#gallery">See it running</a></p>
-    <p class="fine">Pre-release · Apple silicon, macOS 26 or newer · Pro ₹7,299 / Mac / year</p>
+    <p class="cta"><a class="btn primary" href="#download">Install with Homebrew</a><a class="btn" href="https://github.com/zyvorai/velora/releases/download/v0.4.3/Velora-0.4.3.dmg">.dmg</a><a class="btn" href="https://payments.cashfree.com/forms/zyvor-velora">Buy Pro · ₹7,299/yr</a><a class="link" href="#gallery">See it running</a></p>
+    <p class="fine">Apple silicon · macOS 26+ · <code>brew install --cask zyvorai/tap/velora</code> · Pro ₹7,299 / Mac / year</p>
     <ul class="chips" aria-label="Highlights"><li class="ro">Apple silicon</li><li class="nw">Console &amp; Command</li><li>VMs</li><li>MLX</li><li>Kubernetes</li><li>FluxVM</li><li>Kairon</li><li>Fleet</li></ul>
     <img class="hero-img" src="social/velora-hero-dark.jpg" width="2400" height="1260" alt="Velora 0.4: VMs, models and clusters on your Mac, with a running Debian 13 machine, the Fleet screen and Console &amp; Command" />
   </section>
@@ -220,29 +220,30 @@
 
   <section id="download">
     <h2>Download</h2>
-    <p class="sub">Velora 0.4.0 (pre-release) for Apple silicon, macOS 26 or newer. Pick the installer or the disk image.</p>
-    <p class="cta left"><a class="btn primary" href="https://github.com/zyvorai/velora/releases/download/v0.4.0/Velora-0.4.0.pkg">Velora-0.4.0.pkg</a><a class="btn" href="https://github.com/zyvorai/velora/releases/download/v0.4.0/Velora-0.4.0.dmg">Velora-0.4.0.dmg</a><a class="link" href="https://github.com/zyvorai/velora/releases">All releases</a></p>
+    <p class="sub">Velora 0.4.3 for Apple silicon, macOS 26 or newer. Homebrew is the recommended path.</p>
+    <div class="code"><button class="copy" type="button" aria-label="Copy Homebrew install">Copy</button>
+<pre><code>brew install --cask zyvorai/tap/velora</code></pre></div>
+    <p class="cta left"><a class="btn primary" href="https://github.com/zyvorai/velora/releases/download/v0.4.3/Velora-0.4.3.dmg">Velora-0.4.3.dmg</a><a class="btn" href="https://github.com/zyvorai/velora/releases/download/v0.4.3/Velora-0.4.3.pkg">.pkg</a><a class="link" href="https://github.com/zyvorai/velora/releases">All releases</a></p>
     <table>
-      <tr><th>File</th><th>Size</th><th>SHA-256</th></tr>
-      <tr><td><a href="https://github.com/zyvorai/velora/releases/download/v0.4.0/Velora-0.4.0.pkg">Velora-0.4.0.pkg</a></td><td>2.9 MB</td><td><code class="hash">773bb434ec8bcfa1ccd1a104fa0fd5c5dd748195748ea6d52e874951051a05d7</code></td></tr>
-      <tr><td><a href="https://github.com/zyvorai/velora/releases/download/v0.4.0/Velora-0.4.0.dmg">Velora-0.4.0.dmg</a></td><td>3.5 MB</td><td><code class="hash">7a558bcf1dfe89e63475dbe3e89b28d11c74083b0c4eb03b662f667076e4572f</code></td></tr>
+      <tr><th>File</th><th>SHA-256</th></tr>
+      <tr><td><a href="https://github.com/zyvorai/velora/releases/download/v0.4.3/Velora-0.4.3.dmg">Velora-0.4.3.dmg</a></td><td><code class="hash">72f9dc2886cc795545d9325a958202aad21b93a8dc5a19847c952b574d2fe735</code></td></tr>
+      <tr><td><a href="https://github.com/zyvorai/velora/releases/download/v0.4.3/Velora-0.4.3.pkg">Velora-0.4.3.pkg</a></td><td><code class="hash">cc8666a18f1482225b2da7c0671e2608c97c50dee6c7605cf2d91eb1fabac167</code></td></tr>
     </table>
-    <p class="sub">Not notarized yet, so the first launch needs one override: right-click Velora (or the .pkg), choose Open, then Open. Or run:</p>
-    <div class="code"><button class="copy" type="button" aria-label="Copy the command">Copy</button>
-<pre><code>xattr -dr com.apple.quarantine /Applications/Velora.app</code></pre></div>
     <p class="sub">Full guide: <a href="https://github.com/zyvorai/velora/blob/main/docs/INSTALL.md">INSTALL.md</a>.</p>
   </section>
 
   <section id="pricing">
     <h2>Pricing</h2>
-    <p class="sub">Personal, home, learning and non-production use stay free under the BSL. <strong>Production business use</strong> needs <strong>Velora Pro</strong>: <strong>₹7,299 per Mac per year</strong> (including GST in India; about US$86). One licence per Mac; the invoice is your proof. Plain-language terms: <a href="https://github.com/zyvorai/velora/blob/main/LICENSING.md">LICENSING.md</a>.</p>
+    <p class="sub">Personal, home, learning and non-production use stay free under the BSL. <strong>Production business use</strong> needs <strong>Velora Pro</strong>: <strong>₹7,299 per Mac per year</strong> (including GST in India; about US$86). One licence per Mac; the invoice is your proof. Pay on <a href="https://payments.cashfree.com/forms/zyvor-velora">Cashfree</a> — India and international cards. Plain-language terms: <a href="https://github.com/zyvorai/velora/blob/main/LICENSING.md">LICENSING.md</a>.</p>
     <p class="cta left"><a class="btn primary" href="https://payments.cashfree.com/forms/zyvor-velora">Buy Velora Pro</a><a class="btn" href="mailto:sales@zyvor.dev?subject=Velora%20Fleet%20%2F%20Enterprise">Fleet / Enterprise</a></p>
   </section>
 
   <section id="quickstart">
     <h2>Install</h2>
-    <p class="sub">An Apple silicon Mac on macOS 26 or newer. Open the .pkg (or drag Velora from the DMG to Applications), then right-click Velora and choose Open the first time (the app is ad-hoc signed, not notarized).</p>
-    <p class="cta left"><a class="btn" href="https://github.com/zyvorai/velora/releases/download/v0.4.0/Velora-0.4.0.pkg">Download the .pkg</a><a class="btn" href="https://github.com/zyvorai/velora/releases/download/v0.4.0/Velora-0.4.0.dmg">Download the DMG</a></p>
+    <p class="sub">An Apple silicon Mac on macOS 26 or newer.</p>
+    <div class="code"><button class="copy" type="button" aria-label="Copy Homebrew install">Copy</button>
+<pre><code>brew install --cask zyvorai/tap/velora</code></pre></div>
+    <p class="cta left"><a class="btn" href="https://github.com/zyvorai/velora/releases/download/v0.4.3/Velora-0.4.3.dmg">Download the DMG</a><a class="btn" href="https://github.com/zyvorai/velora/releases/download/v0.4.3/Velora-0.4.3.pkg">Download the .pkg</a></p>
     <p class="sub">Press <strong>⌘N</strong>, choose Debian, Ubuntu or macOS, then <strong>Create &amp; Start</strong>. Then connect:</p>
     <div class="code"><button class="copy" type="button" aria-label="Copy the ssh command">Copy</button>
 <pre><code>ssh velora@192.168.64.x        # the address is shown under the display; password: velora</code></pre></div>
