@@ -81,6 +81,8 @@ check(broken.length === 0, `landing: every visible image loads${broken.length ? 
 await page.locator("#quickstart .copy").first().click();
 await page.waitForSelector("#toast:not([hidden])");
 check((await page.locator("#toast").innerText()).includes("Copied"), "quickstart: copy reports success");
+await page.locator("#quickstart .copy").last().click();
+await page.waitForTimeout(200);
 check((await page.evaluate(() => navigator.clipboard.readText())).includes("ssh velora@"), "quickstart: clipboard holds the ssh command");
 await page.locator("#quickstart").scrollIntoViewIfNeeded();
 await page.waitForTimeout(400);
