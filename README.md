@@ -17,6 +17,8 @@
 
 ✨ **[New in 0.4](#new-in-04)** · 🖼️ **[Gallery](#gallery)** · 🎬 **[In motion](#in-motion)** · 🌐 **[Website](https://zyvorai.github.io/velora/)** · 📦 **[Install guide](docs/INSTALL.md)** · 📚 **[Tutorials](docs/tutorials/README.md)** · 🧩 **[How it works](docs/how-it-works.md)**
 
+[Client overview (PDF)](docs/Velora-Client-Overview.pdf)
+
 | ⬇️ Download v0.4.0 (pre-release) | Size | SHA-256 |
 | --- | --- | --- |
 | [**Velora-0.4.0.pkg**](https://github.com/zyvorai/velora/releases/download/v0.4.0/Velora-0.4.0.pkg): installer, puts Velora in Applications | 2.9 MB | [`773bb434…51a05d7`](https://github.com/zyvorai/velora/releases/download/v0.4.0/Velora-0.4.0.pkg.sha256) |
