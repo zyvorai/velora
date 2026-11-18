@@ -71,7 +71,7 @@ figcaption{margin-top:12px;color:var(--dim);font-size:14px;text-align:center}
 .band div{padding:22px 18px;border-left:1px solid var(--line)}.band div:first-child{border-left:0}
 .band b{display:block}.band span{color:var(--dim);font-size:14px}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
-.card{background:var(--bg2);border:1px solid var(--line);border-radius:18px;padding:20px}.card p{margin:0;color:var(--dim);font-size:15px}
+.grid>*{min-width:0}.card{background:var(--bg2);border:1px solid var(--line);border-radius:18px;padding:20px}.card p{margin:0;color:var(--dim);font-size:15px}
 .card-img{display:block;width:100%;height:auto;margin-top:22px;border-radius:18px;border:1px solid var(--line)}
 pre{background:var(--code-bg);color:var(--code);padding:18px;border-radius:14px;overflow-x:auto;line-height:1.6;font-size:14px;margin:0}
 :not(pre)>code{background:var(--bg2);padding:2px 6px;border-radius:6px;font-size:.9em}
