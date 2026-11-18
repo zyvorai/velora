@@ -43,7 +43,7 @@ This repository holds the **website, documentation and downloadable builds** (se
    ```
 
    Or download the latest [`.dmg` / `.pkg`](https://github.com/zyvorai/velora/releases) (see [INSTALL.md](docs/INSTALL.md)).
-2. Production use needs **Velora Pro** (₹7,299 / Mac / year): [Cashfree](https://payments.cashfree.com/forms/zyvor-velora) (India + international cards).
+2. Production use needs **Velora Pro** (₹7,299 / Mac / year): [Cashfree](https://payments.cashfree.com/forms/zyvor-velora) · [International (Razorpay)](https://rzp.io/rzp/cjooj55V) (Cashfree for India; Razorpay for international cards).
 3. Press **⌘N**, choose Debian, Ubuntu or macOS, then **Create & Start**.
 
 Read the [install guide](docs/INSTALL.md), then the [tutorials](docs/tutorials/README.md): [your first VM](docs/tutorials/01-first-vm.md),
@@ -145,7 +145,7 @@ More in [How it works](docs/how-it-works.md): the gateway, the memory scheduler,
 - **The app** is under the Business Source License 1.1 ([LICENSE-APP.txt](LICENSE-APP.txt)): free for personal and home use, learning,
   research, labs, development and testing (including inside a company); production business use needs a commercial licence. Plain
   words: [LICENSING.md](LICENSING.md).
-- **Velora Pro (production):** **₹7,299 per Mac per year** (incl. GST; about US$86). [Buy on Cashfree](https://payments.cashfree.com/forms/zyvor-velora) (India + international cards). Fleet / Enterprise: sales@zyvor.dev.
+- **Velora Pro (production):** **₹7,299 per Mac per year** (incl. GST; about US$86). [Buy on Cashfree](https://payments.cashfree.com/forms/zyvor-velora) · [International (Razorpay)](https://rzp.io/rzp/cjooj55V) (Cashfree for India; Razorpay for international cards). Fleet / Enterprise: sales@zyvor.dev.
 - **Homebrew:** `brew install --cask zyvorai/tap/velora`
 - **macOS guests** are licensed by Apple, not by Velora: [MACOS-LICENSING.md](MACOS-LICENSING.md). Velora limits you to two active
   macOS guests by default and asks you to confirm Apple's terms the first time.
