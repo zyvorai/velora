@@ -28,10 +28,9 @@ version becomes available under Apache-2.0 four years after it is first publishe
 - **Do I get a licence to macOS?** No. macOS is licensed by Apple, separately: see [MACOS-LICENSING.md](MACOS-LICENSING.md).
 - **What happens after four years?** The version you have then becomes available under Apache-2.0, as the licence says.
 - **How do I get a commercial licence?** **Velora Pro** covers production use on one Mac. Buy one licence per Mac on the
-  [Cashfree checkout page](https://payments.cashfree.com/forms/zyvor-velora) · [International (Razorpay)](https://rzp.io/rzp/cjooj55V) (₹7,299 per year including GST, about US$86;
-  **India via Cashfree; international cards via Razorpay**). A GST / commercial invoice is emailed and is your proof of licence. Or ask via
+  [Razorpay checkout page](https://rzp.io/rzp/cjooj55V) (₹7,299 per year including GST, about US$86). A GST / commercial invoice is emailed and is your proof of licence. Or ask via
   [zyvor.dev](https://zyvor.dev) or [sales@zyvor.dev](mailto:sales@zyvor.dev). There is no licence key or in-app unlock yet,
   and no Mac App Store listing. Install with `brew install --cask zyvorai/tap/velora` or download from Releases.
-- **GST (India)?** The Cashfree Pro checkout is **₹7,299 including GST** for one Mac for one year. Free BSL use has no charge
+- **GST (India)?** The Razorpay Pro checkout is **₹7,299 including GST** for one Mac for one year. Free BSL use has no charge
   and no GST. Fleet and Enterprise quotes may be exclusive of GST; GST is then added on the invoice.
 - **The website and documentation** in this repository are Copyright Zyvor AI Labs, all rights reserved.
