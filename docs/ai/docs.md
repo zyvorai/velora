@@ -66,13 +66,7 @@ The full list is in [docs/RELEASE.md](docs/RELEASE.md).
    cd ~/Downloads && shasum -a 256 -c Velora-<version>.dmg.sha256
    ```
 3. Open the DMG and drag **Velora** to **Applications**.
-4. Open it the first time. The build is ad-hoc signed and **not notarized**, so Gatekeeper blocks the first launch. Use one of these:
-   - right-click Velora → **Open** → **Open**, or
-   - System Settings → Privacy & Security → **Open Anyway**, or
-   - run this command:
-     ```bash
-     xattr -dr com.apple.quarantine /Applications/Velora.app
-     ```
+4. Open it the first time. Velora 0.4.4 is Developer ID signed and notarized by Apple; macOS shows its standard first-open confirmation for apps downloaded from the internet. Choose **Open**.
 
 See [docs/INSTALL.md](docs/INSTALL.md) for the full guide.
 
