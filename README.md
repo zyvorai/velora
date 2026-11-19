@@ -20,7 +20,7 @@ Debian, Ubuntu and macOS virtual machines, local MLX models, Kubernetes, FluxVM 
 | Release page | [v0.4.4](https://github.com/zyvorai/velora/releases/tag/v0.4.4) · [`.sha256`](https://github.com/zyvorai/velora/releases/download/v0.4.4/Velora-0.4.4.dmg.sha256) |
 | SHA-256 | `93589a2568e6facc70f6b6aac7526472f10c205f64e1931ae1d0629abc4c6312` |
 
-Free 30-day trial key: **sales@zyvor.dev**. Requires macOS 26 or later on Apple silicon.
+The app runs without a key. For a free 30-day trial key, email **sales@zyvor.dev**. Requires macOS 26 or later on Apple silicon.
 
 Or install with Homebrew:
 

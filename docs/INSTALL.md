@@ -21,27 +21,17 @@ Production business use needs **Velora Pro** (₹7,299 / Mac / year): [Cashfree]
 
 | File | What it does |
 | --- | --- |
-| [Velora-0.4.3.dmg](https://github.com/zyvorai/velora/releases/download/v0.4.3/Velora-0.4.3.dmg) ([.sha256](https://github.com/zyvorai/velora/releases/download/v0.4.3/Velora-0.4.3.dmg.sha256)) | Disk image: drag Velora to Applications |
-| [Velora-0.4.3.pkg](https://github.com/zyvorai/velora/releases/download/v0.4.3/Velora-0.4.3.pkg) ([.sha256](https://github.com/zyvorai/velora/releases/download/v0.4.3/Velora-0.4.3.pkg.sha256)) | Installer: puts Velora.app in Applications |
+| [Velora-0.4.4.dmg](https://github.com/zyvorai/velora/releases/download/v0.4.4/Velora-0.4.4.dmg) ([.sha256](https://github.com/zyvorai/velora/releases/download/v0.4.4/Velora-0.4.4.dmg.sha256)) | Disk image: drag Velora to Applications |
 
-Every version is on the [Releases](https://github.com/zyvorai/velora/releases) page.
+Every version is on the [Releases](https://github.com/zyvorai/velora/releases) page. Release 0.4.4 ships the DMG only.
 
-1. Download the `.pkg` or the `.dmg`, and its `.sha256`.
+1. Download the `.dmg` and its `.sha256`.
 2. Optional: verify it.
    ```bash
-   cd ~/Downloads && shasum -a 256 -c Velora-0.4.0.pkg.sha256    # or Velora-0.4.0.dmg.sha256
+   cd ~/Downloads && shasum -a 256 -c Velora-0.4.4.dmg.sha256
    ```
-3. Install it, one of two ways:
-   - **.pkg:** open it and follow the installer (Introduction, Licence, Destination, Install). If macOS refuses to open the
-     package because it is not notarized, right-click it and choose **Open**. Or from Terminal:
-     `sudo installer -pkg ~/Downloads/Velora-0.4.0.pkg -target /`
-   - **.dmg:** open it and drag **Velora** to **Applications**.
-4. **First launch.** Velora is ad-hoc signed, not notarized, so Gatekeeper blocks it once. Either
-   right-click Velora → **Open** → **Open**, or run:
-   ```bash
-   xattr -dr com.apple.quarantine /Applications/Velora.app
-   ```
-   On recent macOS you can also use System Settings → Privacy & Security → **Open Anyway**.
+3. Open the DMG and drag **Velora** to **Applications**.
+4. **First launch.** Velora 0.4.4 is Developer ID signed and notarized by Apple. macOS shows its standard first-open confirmation for apps downloaded from the internet; choose **Open**. Earlier builds (before 0.4.4) were ad-hoc signed and not notarized and needed a Gatekeeper override.
 
 ## Try it (5 minutes)
 
