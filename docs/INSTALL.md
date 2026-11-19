@@ -15,7 +15,7 @@
 brew install --cask zyvorai/tap/velora
 ```
 
-Production business use needs **Velora Pro** (₹7,299 / Mac / year): [Cashfree](https://payments.cashfree.com/forms/zyvor-velora) · [International (Razorpay)](https://rzp.io/rzp/cjooj55V) (Cashfree for India; Razorpay for international cards).
+Production business use needs **Velora Pro** (₹7,299 / Mac / year): [Razorpay](https://rzp.io/rzp/cjooj55V).
 
 ### Direct download
 
