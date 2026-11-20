@@ -15,7 +15,7 @@
 brew install --cask zyvorai/tap/velora
 ```
 
-Production business use needs **Velora Pro** (₹7,299 / Mac / year): [Razorpay](https://rzp.io/rzp/cjooj55V).
+Production business use needs **Velora Pro** (INR 7,299 incl. GST in India, about US$74 excl. tax elsewhere, per Mac per year): [Buy](https://zyvor.dev/buy#velora). Start with the free 30-day trial. Prices: INR incl. 18% GST in India; US dollars excl. tax elsewhere (VAT, GST or sales tax added where applicable). Pay online by UPI, card or netbanking; international cards work (charged in rupees); or request a US-dollar invoice by bank transfer. Custom pricing: contact sales@zyvor.dev.
 
 ### Direct download
 
