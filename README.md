@@ -65,7 +65,7 @@ Light and dark captures of every pane are in [`docs/ux/`](docs/ux/).
 ## Trial and licence
 
 - The app is under the Business Source License 1.1 ([LICENSE-APP.txt](LICENSE-APP.txt)): free for personal, home, learning and non-production use. Plain words: [LICENSING.md](LICENSING.md).
-- A free 30-day trial key is available from sales@zyvor.dev.
+- A free 30-day trial key is available from sales@zyvor.dev. The trial is a soft trial: nothing is disabled and no data is lost when it ends.
 - Production business use needs **Velora Pro: ₹7,299 per Mac per year including GST**. Buy at [zyvor.dev/buy](https://zyvor.dev/buy) or on the [payment page](https://rzp.io/rzp/cjooj55V). Fleet and Enterprise: sales@zyvor.dev.
 - macOS guests are licensed by Apple, not by Velora: [MACOS-LICENSING.md](MACOS-LICENSING.md).
 - This website and documentation are Copyright 2026 Zyvor AI Labs, all rights reserved ([LICENSE](LICENSE)).
