@@ -28,8 +28,9 @@
 <meta name="twitter:image" content="https://zyvorai.github.io/velora/social/og.png">
 <meta name="twitter:image:alt" content="Velora: VMs, models and clusters on your Mac. The app window shows demo data.">
 <link rel="stylesheet" href="assets/landing.css">
+<link rel="stylesheet" href="assets/zyvor-buyer.css">
 <style>:root{--accent-btn:#0071e3;--accent-ink:#0071e3;--accent-grad-a:#0071e3;--accent-grad-b:#32ade6}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--accent-ink:#2997ff}}:root[data-theme="dark"]{--accent-ink:#2997ff}</style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Velora","applicationCategory":"DeveloperApplication","operatingSystem":"macOS","softwareVersion":"0.4.4","downloadUrl":"https://github.com/zyvorai/velora/releases/tag/v0.4.4","url":"https://zyvorai.github.io/velora/","description":"A native Mac app for Apple silicon: Debian, Ubuntu and macOS virtual machines, local MLX models, Kubernetes, FluxVM and Kairon.","image":"https://zyvorai.github.io/velora/social/og.png","publisher":{"@type":"Organization","name":"Zyvor AI Labs","url":"https://zyvor.dev"},"offers":[{"@type":"Offer","name":"Velora Pro (India, incl. 18% GST)","price":"7299","priceCurrency":"INR","url":"https://zyvor.dev/buy#velora"},{"@type":"Offer","name":"Velora Pro (outside India, excl. tax)","price":"74","priceCurrency":"USD","url":"https://zyvor.dev/buy#velora"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Velora","applicationCategory":"DeveloperApplication","operatingSystem":"macOS","softwareVersion":"0.4.4","downloadUrl":"https://github.com/zyvorai/velora/releases/tag/v0.4.4","url":"https://zyvorai.github.io/velora/","description":"A native Mac app for Apple silicon: Debian, Ubuntu and macOS virtual machines, local MLX models, Kubernetes, FluxVM and Kairon.","image":"https://zyvorai.github.io/velora/social/og.png","publisher":{"@type":"Organization","name":"Zyvor AI Labs","url":"https://zyvor.dev"}}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -45,9 +46,22 @@
   <h1 id="top">Velora</h1>
   <p class="tagline">VMs, models and clusters on your Mac.</p>
   <p class="promise"><strong>One native app for Apple silicon.</strong> Boot Debian, Ubuntu or macOS virtual machines in one click, serve MLX models behind an OpenAI-compatible gateway, bring up Kubernetes, and drive FluxVM and Kairon.</p>
-  <p class="cta"><a class="btn primary" href="https://github.com/zyvorai/velora/releases/tag/v0.4.4">Download the 30-day trial</a><a class="textlink" href="#features">Learn more</a></p>
-  <p class="fine">macOS 26 or later · Apple silicon · notarized · The app runs without a key. For a 30-day trial key, email sales@zyvor.dev. The trial is soft: nothing is disabled and no data is lost.</p>
+  <div class="buyer" role="group" aria-label="Get Velora">
+    <div class="actions">
+      <a class="btn primary" href="https://github.com/zyvorai/velora/releases/download/v0.4.4/Velora-0.4.4.dmg">Download Velora 0.4.4</a>
+      <a class="btn ghost" href="https://zyvor.dev/contact?intent=trial&amp;product=velora" rel="noopener">Ask for a 30-day trial</a>
+      <a class="btn ghost" href="https://zyvor.dev/buy" rel="noopener">Buy a license</a>
+    </div>
+    <p class="sub">Velora-0.4.4.dmg · <a href="https://zyvor.dev/pricing" rel="noopener">See current prices</a> · <a href="https://github.com/zyvorai/velora/releases/tag/v0.4.4">All downloads</a></p>
+    <p class="trust"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><span><strong>Verified by Apple:</strong> Developer ID signed and notarized. This applies to the 0.4.4 DMG.</span></p>
+    <ul class="reqs"><li>Requires macOS 26 or later on Apple silicon (M1 or newer). Intel Macs are not supported.</li></ul>
+  </div>
   <figure class="shot hero-shot"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/img/hero-home-dark-1200.webp 1200w, assets/img/hero-home-dark-1800.webp 1800w" sizes="(min-width:1080px) 1040px, 100vw"><img src="assets/img/hero-home-light-1200.webp" srcset="assets/img/hero-home-light-1200.webp 1200w, assets/img/hero-home-light-1800.webp 1800w" sizes="(min-width:1080px) 1040px, 100vw" width="2464" height="1664" alt="Velora Home pane: memory free, machines, endpoints and tokens, a memory bar split between macOS, machines, models and training, the gateway, and a Set up Velora checklist." fetchpriority="high" decoding="async"></picture><figcaption>The Home pane. Demo data.</figcaption></figure>
+</section>
+
+<section class="outcomes" aria-labelledby="outcomes-h">
+  <h2 id="outcomes-h">Run VMs and local AI on one Mac.</h2>
+  <ul class="tiles"><li class="tile"><h3>A VM in one click</h3><p>Press ⌘N, choose Debian, Ubuntu or macOS, then Create &amp; Start. Images are cached, resumable and checksum-verified.</p></li><li class="tile"><h3>Your own private AI endpoint</h3><p>An OpenAI-compatible endpoint that is versioned, keyed and rate-limited, serving MLX models. Nothing leaves your Mac.</p></li><li class="tile"><h3>Reach the guest, even offline</h3><p>A live serial console, a command box with exit codes, and file upload and download, even when the guest&#x27;s network is down.</p></li></ul>
 </section>
 
 <section class="band" aria-label="Overview">
@@ -94,18 +108,16 @@
   <p class="cta"><a class="btn primary" href="https://github.com/zyvorai/velora/releases/download/v0.4.4/Velora-0.4.4.dmg">Download Velora-0.4.4.dmg</a><a class="textlink" href="https://github.com/zyvorai/velora/releases/tag/v0.4.4">Release page</a><a class="textlink" href="https://github.com/zyvorai/velora/blob/main/docs/INSTALL.md">Install guide</a></p>
 </section>
 
-<section class="pricing" id="pricing" aria-labelledby="pricing-h">
-  <div class="inner">
-  <h2 id="pricing-h" style="text-align:left">Licence and pricing.</h2>
-  <p class="lead">Running Velora needs <b>Velora Pro: INR 7,299 per Mac per year incl. GST (about US$74 excl. tax outside India)</b>. Try it first with a 30-day trial key from sales@zyvor.dev.</p>
-<div class="card buy"><h3>Velora Pro</h3><p>Production business use on one Mac.</p><p><b>INR 7,299</b> per Mac per year incl. GST (about <b>US$74</b> excl. tax outside India)</p><p class="cta"><a class="btn primary" href="https://zyvor.dev/buy#velora" rel="noopener">Buy Velora Pro</a><a class="btn ghost" href="mailto:sales@zyvor.dev?subject=Velora%2030-day%20trial%20key">Start 30-day trial</a></p></div>
-<p class="fine">Prices: INR incl. 18% GST in India; US dollars excl. tax elsewhere (VAT, GST or sales tax added where applicable). Pay online by UPI, card or netbanking; international cards work (charged in rupees); or request a US-dollar invoice by bank transfer. Custom pricing: contact sales@zyvor.dev. Fleet and Enterprise: <a href="mailto:sales@zyvor.dev">sales@zyvor.dev</a>. The app is under the Business Source License 1.1. <a href="https://github.com/zyvorai/velora/blob/main/LICENSING.md">Licensing in plain words</a>.</p>
-  </div>
+<section class="buy-pointer" id="pricing" aria-labelledby="pricing-h">
+  <h2 id="pricing-h">Prices and licenses</h2>
+  <p>Current prices, in your currency where available, are on zyvor.dev. You can evaluate for 30 days before you decide.</p>
+  <p class="cta"><a class="btn primary" href="https://zyvor.dev/buy" rel="noopener">Buy a license</a><a class="btn ghost" href="https://zyvor.dev/contact?intent=trial&amp;product=velora" rel="noopener">Ask for a 30-day trial</a><a class="textlink" href="https://zyvor.dev/pricing" rel="noopener">See current prices</a></p>
+  <p class="fine"><a href="https://github.com/zyvorai/velora/blob/main/LICENSING.md">Licensing in plain words</a> · Several Macs or a larger rollout: <a href="https://zyvor.dev/contact?intent=sales&amp;product=velora" rel="noopener">contact sales</a>.</p>
 </section>
 
 <section class="faq" id="faq" aria-labelledby="faq-h">
   <h2 id="faq-h">Questions, answered.</h2>
-  <details><summary>What does Velora cost?</summary><p>Velora Pro is INR 7,299 per Mac per year incl. GST in India (about US$74 excl. tax elsewhere).</p></details>
+  <details><summary>What does Velora cost?</summary><p>Current prices are on <a href="https://zyvor.dev/pricing" rel="noopener">zyvor.dev/pricing</a>.</p></details>
 <details><summary>Is there a trial?</summary><p>Yes: a 30-day trial key from sales@zyvor.dev. It is a soft trial: nothing is disabled and no data is lost when it ends.</p></details>
 <details><summary>Which Macs and macOS versions?</summary><p>Apple silicon (M1 or newer) with macOS 26 or later. Intel Macs are not supported.</p></details>
 <details><summary>Do I get a licence to macOS?</summary><p>No. macOS guests are licensed by Apple, not by Velora. Velora limits you to two active macOS guests by default and asks you to confirm Apple's terms the first time. See <a href="https://github.com/zyvorai/velora/blob/main/MACOS-LICENSING.md">macOS licensing</a>.</p></details>
@@ -116,7 +128,7 @@
 </main>
 <footer class="footer">
   <p><strong>Velora</strong> · The Velora source code is private.</p>
-  <p class="links"><a href="https://github.com/zyvorai/velora/tree/main/docs">Docs</a><a href="https://github.com/zyvorai/velora/blob/main/docs/tutorials/README.md">Tutorials</a><a href="Velora-Client-Overview.pdf">Client overview (PDF)</a><a href="https://github.com/zyvorai/velora">GitHub</a><a href="https://github.com/zyvorai/velora/blob/main/LICENSING.md">LICENSING</a><a href="https://github.com/zyvorai/velora/blob/main/MACOS-LICENSING.md">macOS licensing</a><a href="https://github.com/zyvorai/velora/blob/main/SECURITY.md">SECURITY</a><a href="mailto:sales@zyvor.dev">sales@zyvor.dev</a></p>
+  <p class="links"><a href="https://zyvor.dev/contact">Support</a><a href="https://github.com/zyvorai/velora/tree/main/docs">Docs</a><a href="https://github.com/zyvorai/velora/blob/main/docs/tutorials/README.md">Tutorials</a><a href="Velora-Client-Overview.pdf">Client overview (PDF)</a><a href="https://github.com/zyvorai/velora">GitHub</a><a href="https://github.com/zyvorai/velora/blob/main/LICENSING.md">LICENSING</a><a href="https://github.com/zyvorai/velora/blob/main/MACOS-LICENSING.md">macOS licensing</a><a href="https://github.com/zyvorai/velora/blob/main/SECURITY.md">SECURITY</a><a href="mailto:sales@zyvor.dev">sales@zyvor.dev</a></p>
   <p>© 2026 Zyvor AI Labs · <a href="https://zyvor.dev">zyvor.dev</a> · App: Business Source License 1.1</p>
 </footer>
 </body>
