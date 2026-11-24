@@ -21,17 +21,17 @@ Production business use needs **Velora Pro** (INR 7,299 incl. GST in India, abou
 
 | File | What it does |
 | --- | --- |
-| [Velora-0.5.0.dmg](https://github.com/zyvorai/velora/releases/download/v0.5.0/Velora-0.5.0.dmg) ([.sha256](https://github.com/zyvorai/velora/releases/download/v0.5.0/Velora-0.5.0.dmg.sha256)) | Disk image: drag Velora to Applications |
+| [Velora-0.5.1.dmg](https://github.com/zyvorai/velora/releases/download/v0.5.1/Velora-0.5.1.dmg) ([.sha256](https://github.com/zyvorai/velora/releases/download/v0.5.1/Velora-0.5.1.dmg.sha256)) | Disk image: drag Velora to Applications |
 
-Every version is on the [Releases](https://github.com/zyvorai/velora/releases) page. Release 0.5.0 ships the DMG only (a signed installer package is not offered yet).
+Every version is on the [Releases](https://github.com/zyvorai/velora/releases) page. Release 0.5.1 ships the DMG only (a signed installer package is not offered yet).
 
 1. Download the `.dmg` and its `.sha256`.
 2. Optional: verify it.
    ```bash
-   cd ~/Downloads && shasum -a 256 -c Velora-0.5.0.dmg.sha256
+   cd ~/Downloads && shasum -a 256 -c Velora-0.5.1.dmg.sha256
    ```
 3. Open the DMG and drag **Velora** to **Applications**.
-4. **First launch.** Velora 0.5.0 is Developer ID signed and notarized by Apple. macOS shows its standard first-open confirmation for apps downloaded from the internet; choose **Open**. Earlier builds (before 0.5.0) were ad-hoc signed and not notarized and needed a Gatekeeper override.
+4. **First launch.** Velora 0.5.1 is Developer ID signed and notarized by Apple. macOS shows its standard first-open confirmation for apps downloaded from the internet; choose **Open**. Earlier builds (before 0.5.1) were ad-hoc signed and not notarized and needed a Gatekeeper override.
 
 ## Try it (5 minutes)
 
