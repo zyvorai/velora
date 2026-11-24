@@ -43,7 +43,7 @@ real EXO sharding, and a notarized build (the release workflow notarizes once De
 - macOS guest install and boot (`VZMacOSInstaller` path is implemented but unrun; ≈17 GB download).
 - Drag-and-drop of `.ipsw`/`.iso` onto the window.
 - Linux/QEMU GPU acceleration (`virtio-vga-gl`) and KVM on real hardware.
-- Notarization: Velora 0.4.4 is Developer ID signed and notarized by Apple; macOS shows its standard first-open confirmation for apps downloaded from the internet. Builds before 0.4.4 were not notarized and needed a Gatekeeper override.
+- Notarization: Velora 0.5.0 is Developer ID signed and notarized by Apple; macOS shows its standard first-open confirmation for apps downloaded from the internet. Builds before 0.5.0 were not notarized and needed a Gatekeeper override.
 
 ## Licensing note
 

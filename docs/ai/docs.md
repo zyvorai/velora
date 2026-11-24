@@ -66,7 +66,7 @@ The full list is in [docs/RELEASE.md](docs/RELEASE.md).
    cd ~/Downloads && shasum -a 256 -c Velora-<version>.dmg.sha256
    ```
 3. Open the DMG and drag **Velora** to **Applications**.
-4. Open it the first time. Velora 0.4.4 is Developer ID signed and notarized by Apple; macOS shows its standard first-open confirmation for apps downloaded from the internet. Choose **Open**.
+4. Open it the first time. Velora 0.5.0 is Developer ID signed and notarized by Apple; macOS shows its standard first-open confirmation for apps downloaded from the internet. Choose **Open**.
 
 See [docs/INSTALL.md](docs/INSTALL.md) for the full guide.
 

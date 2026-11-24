@@ -8,7 +8,7 @@
 
 Debian, Ubuntu and macOS virtual machines, local MLX models, Kubernetes, FluxVM and Kairon, in one native app for Apple silicon.
 
-[Website](https://zyvorai.github.io/velora/) · [Download v0.4.4](https://github.com/zyvorai/velora/releases/tag/v0.4.4) · [Tutorials](docs/tutorials/README.md) · [Docs](docs/)
+[Website](https://zyvorai.github.io/velora/) · [Download v0.5.0](https://github.com/zyvorai/velora/releases/tag/v0.5.0) · [Tutorials](docs/tutorials/README.md) · [Docs](docs/)
 
 </div>
 
@@ -16,9 +16,9 @@ Debian, Ubuntu and macOS virtual machines, local MLX models, Kubernetes, FluxVM 
 
 | | |
 | --- | --- |
-| **[Velora-0.4.4.dmg](https://github.com/zyvorai/velora/releases/download/v0.4.4/Velora-0.4.4.dmg)** | Drag Velora to Applications. Signed with our Developer ID and notarized by Apple. |
-| Release page | [v0.4.4](https://github.com/zyvorai/velora/releases/tag/v0.4.4) · [`.sha256`](https://github.com/zyvorai/velora/releases/download/v0.4.4/Velora-0.4.4.dmg.sha256) |
-| SHA-256 | `93589a2568e6facc70f6b6aac7526472f10c205f64e1931ae1d0629abc4c6312` |
+| **[Velora-0.5.0.dmg](https://github.com/zyvorai/velora/releases/download/v0.5.0/Velora-0.5.0.dmg)** | Drag Velora to Applications. Signed with our Developer ID and notarized by Apple. |
+| Release page | [v0.5.0](https://github.com/zyvorai/velora/releases/tag/v0.5.0) · [`.sha256`](https://github.com/zyvorai/velora/releases/download/v0.5.0/Velora-0.5.0.dmg.sha256) |
+| SHA-256 | `51477d67f355e55cae7b87b199396e1b9031f89007a4b5b061a74b397a53bf27` |
 
 The app runs without a key. For a free 30-day trial key, email **sales@zyvor.dev**. Requires macOS 26 or later on Apple silicon.
 
@@ -31,7 +31,7 @@ brew install --cask zyvorai/tap/velora
 Verify a download:
 
 ```bash
-cd ~/Downloads && shasum -a 256 -c Velora-0.4.4.dmg.sha256
+cd ~/Downloads && shasum -a 256 -c Velora-0.5.0.dmg.sha256
 ```
 
 ## Screenshots
